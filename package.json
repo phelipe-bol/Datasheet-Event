@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "web": "docker stop datasheet-event && docker rm datasheet-event && docker build -t datasheet-event:latest . && docker run -d -p 80:80 --name datasheet-event datasheet-event:latest",
+    "build": "docker stop datasheet-event && docker rm datasheet-event && docker tag datasheet-event phelipebol/datasheet-event:latest && docker push phelipebol/datasheet-event:latest",
+    "clear": "docker stop datasheet-event && docker rm datasheet-event"
+  }
+}

@@ -12,6 +12,6 @@ function SeculoAno($ano){
 }
 
 	
-echo SeculoAno(1905);
+echo SeculoAno(2000);
 
 ?>
